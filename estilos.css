@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+text-align: center;
+font-family: sans-serif;
+}
+.navbar{
+    background-color: #303030;
+    overflow: hidden;
+    position:fixed;
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 18px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 55px;
+}
+
+.navbar a:hover {
+    background: #3208ee;
+    color: #fff;
+}
+.navbar a.active {
+    background-color: #3208ee;
+    color: #fff;
+    padding: 3px 3px;
+    float: left;
+    
+}
+.navbar .icon {
+    display: none;
+}
+
+
+.header {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100px;
+background: url(assets/images/3312927.jpg) no-repeat center;
+background-size: cover;
+}
+
+.header img{
+    margin-top: -20px;
+    width: 400px;
+    height: 400px;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 150px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #3208ee;
+    color: #fff;
+    text-decoration: none;
+    background: #3208ee;
+
+}
+
+.btn:hover {
+    background: none;
+    color:#fff;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sau {
+    padding: 50px 0;
+    background: #303030;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.box-container .box {
+    height: 370px;
+    width: 270px;
+    background: #171717;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    margin: 20px;
+}
+
+.box-container .box i {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #3208ee;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #598ad4;
+}
+
+.box-container .box p {
+    padding: 5px 15px;
+    font-size: 13px;
+}
+.price { 
+    background: url(assets/images/3312927.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.price .contain .box1 img {
+
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+    border-radius:50%;
+    margin-top: 10px;
+    border: 3px solid #cfcbdb;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 0 10px;
+}
+.about {
+    padding: 50px 0;
+    background: #303030;
+}
+.box-container2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.box-container2 .box {
+    width: 280px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    background: #171717;
+    margin: 15px 15px;
+}
+
+.box-container2 .box img{
+
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -50;
+    border: 6px solid #3208ee;
+}
+
+.box-container2 .box h3{
+
+    font-size: 20px;
+    color: #598ad4;
+    padding-top: 10px;
+}
+
+.box-container2 .box p {
+    font-size: 14px;
+    color: #fff;
+    padding: 0;
+}
+
+.box-container2 .box .stars i {
+font-size: 15px;
+color: #598ad4;
+}
+.contact {
+    padding: 50px;
+    background: url(assets/images/3312927.jpg) no-repeat center;
+    background-size: cover;
+    height: 40%;
+}
+
+
+.floating-button-container{
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    background-image: transparent;
+    background-color: transparent;
+    border: transparent;
+ }
+ .floating-button{
+   background-image: transparent;
+   background-color: transparent;
+   border-color: transparent;
+ }
+ 
+
+  .footer-section {
+    display: flex; 
+  }
+
+  .footer-section .box1 p {
+    padding: 80px 0px;
+  }
+  .f-enlaces {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+  }
+  .f-enlaces a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 0px 10px;
+  }
+  .f-enlaces i {
+     margin: 10px;
+  }
+
+figure {
+margin-top: -50px;
+}
+footer{
+    background-color: #303030;
+    height: 50px;
+}
+
+.developer p{
+font-size: 14px;
+color: #fff;
+padding: 18px;
+}
+.developer a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+.developer a:hover{
+    color: #598ad4;
+}
+  /**movil**/
+ 
+  @media (max-width: 767px){
+
+    .navbar a:not(:first-child){display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+        
+    }
+    html {
+        font-size: 100%;
+    }
+   
+    .sau {
+        height: 300vh;
+        background: #303030  ;  
+    }
+    .box-container .box {
+        margin-top: 30px;
+        height: 280px;
+        width: 240px;}
+        .box-container .box p{
+            font-size: 73%;
+            }
+   
+    .about {
+        height: 280vh;
+    }
+.footer-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+  }
+  
+   .navbar.responsive {position: relative;}
+   .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+   }
+   .navbar.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+   }
+
+
+ 
+  /**tablet**/
+  @media (min-width: 767px) and (max-width: 990px) {
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+        
+    }
+    html {
+        font-size: 100%;
+    }
+   
+    .sau {
+        height: 180vh;
+        background: #303030  ;  
+    }
+    .box-container .box {
+        margin-top: 30px;
+        height: 280px;
+        width: 240px;}
+        .box-container .box p{
+            font-size: 75%;
+            }
+  
+    .about {
+        height: 380vh;
+    }
+.footer-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+  }
+ @media (max-width: 1270px){
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+        
+    }
+    html {
+        font-size: 100%;
+    }
+   
+    .sau {
+        height: 250vh;
+        background: #303030  ;  
+    }
+    .box-container .box {
+        margin-top: 30px;
+        height: 280px;
+        width: 240px;}
+        .box-container .box p{
+            font-size: 75%;
+            }
+  
+    .about {
+        height: 180vh;
+    }
+.footer-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+ }
+    
+}
