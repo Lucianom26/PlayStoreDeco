@@ -1,31 +1,42 @@
-   
-            let slideIndex = 1;
-            showSlides(slideIndex);
+const btnleft = document.querySelector(".btn-left"),
+      btnright = document.querySelector(".btn-right"),
+      slider = document.querySelector("#slider"),
+      sliderSection = document.querySelectorAll(".slider-section");       
+      
+      btnleft.addEventListener("click", e => moveToLeft())
+      btnright.addEventListener("click", e => moveToRight())
 
-
-            function plusSlides(n){
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n){
-                showSlides(slideIndex = n);
-            }
-            function showSlides(n){
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("demo");
-                let captionText = document.getElementById("caption");
-                
-                if (n > slides.length){slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length;i++){
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active";
-                captionText.innerHTML = dots[slideIndex - 1].alt;
-            }
+      setInterval(() =>{
+        moveToRight()
+      }, 6000);
+      
+      let operacion = 0;
+          contador = 0;
+          widthImg = 100 / sliderSection.length;
+      function moveToRight() { 
+        if (contador >= sliderSection.length-1){
+            contador = 0;
+            operacion = 0;
+            slider.style.transform = `translate(-${operacion}%)`;
+            slider.style.transition = "none"
+        } else {
+            contador++;
+            operacion = operacion + widthImg;
+            slider.style.transform = `translate(-${operacion}%)`;
+            slider.style.transition = "all ease .6s"
+        }
+    }
+    function moveToLeft() { 
+        contador--;
+        if (contador < 0) {
+            contador = sliderSection.length-1;
+            operacion = widthImg * (sliderSection.length-1)
+            slider.style.transform = `translate(-${operacion}%)`;
+            slider.style.transition = "none"
+        } else {
+            operacion = operacion - widthImg;
+            slider.style.transform = `translate(-${operacion}%)`;
+            slider.style.transition = "all ease .6s"  
+        }
         
+       }    
